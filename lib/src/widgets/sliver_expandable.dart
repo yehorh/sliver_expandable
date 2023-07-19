@@ -67,11 +67,15 @@ class SliverExpandable extends RenderObjectWidget {
   @override
   RenderSliver createRenderObject(BuildContext context) =>
       RenderSliverExpandable(
-          animation: animation, maxTranslationOffset: translationOffset);
+        animation: animation,
+        maxTranslationOffset: translationOffset,
+      );
 
   @override
   void updateRenderObject(
-      BuildContext context, covariant RenderSliverExpandable renderObject) {
+    BuildContext context,
+    covariant RenderSliverExpandable renderObject,
+  ) {
     renderObject.animation = animation;
     renderObject.maxTranslationOffset = translationOffset;
   }

@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: sliver_expandable
+dependency_overrides:
+  sliver_expandable:
+    path: ..

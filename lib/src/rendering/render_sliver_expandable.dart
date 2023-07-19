@@ -251,8 +251,11 @@ class RenderSliverExpandable extends RenderSliver with RenderSliverHelpers {
   }
 
   @override
-  bool hitTestChildren(SliverHitTestResult result,
-      {required double mainAxisPosition, required double crossAxisPosition}) {
+  bool hitTestChildren(
+    SliverHitTestResult result, {
+    required double mainAxisPosition,
+    required double crossAxisPosition,
+  }) {
     assert(geometry!.hitTestExtent > 0);
     final double headerPosition = -constraints.scrollOffset;
 
